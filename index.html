@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="heading">Password Generator</div>
+        <div class="countainer">
+            <div class="upper">
+                <div class="poassord-display" >
+                    <h2 class="h2pass">Password</h2>
+                </div>
+                <div class="copy-btn">
+                    <button onclick="copyClick()">C</button>
+                </div>
+            </div>
+            <div class="lower">
+                <div class="pass-length">
+                    <p class="text-password">Password Lenght</p>
+                    <div class="pass-no">4</div>
+                </div>
+                <div class="pass-range">
+                    <input class="rangeinput" value="4" type="range" min="1" max="15">
+                </div>
+                <div class="check-btns">
+                    
+                    <label for="UpperCase"><input type="checkbox" id="UpperCase"  class="check uppercase">Include UpperCase latter</label>
+                    <label for="LowerCase"><input type="checkbox"  id="LowerCase" class="check lowercase">Include LowerCase latter</label>
+                    <label for="Number"><input type="checkbox" id="Number" class="check number">Include Numbers</label>
+                    <label for="Symbols"><input type="checkbox" id="Symbols" class="check symbol">include Symbols</label>
+                    
+                </div>
+                <div class="pass-strengh">
+                    <p class="pass-type">Low</p>
+                    <div class="pass-color"></div>
+                </div>
+                <div class="btn-box">
+                    <button class="finalbtn">Generate Password</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

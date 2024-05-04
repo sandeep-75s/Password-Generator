@@ -1,0 +1,253 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    /* --bo: 2px solid black; */
+}
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(400deg,rgb(157, 60, 255)10%,rgb(46, 1, 87)60%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heading {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 2%;
+    text-transform: uppercase;
+}
+.countainer {
+    width: 400px;
+    height: 480px;
+    border: var(--bo);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.upper {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    border: var(--bo);
+    display: flex;
+    padding: 5%;
+    justify-content: space-between;
+    background-color: rgba(00, 00, 00, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border-bottom: 5px solid rgb(180, 32, 218) ;
+}
+.poassord-display {
+    width: 90%;
+    height: 100%;
+    border: var(--bo)
+}
+.poassord-display h2{
+    font-size: 25px;
+    /* padding-bottom: 20px; */
+    /* padding-left: 2%; */
+    color: yellow;
+    text-transform: uppercase;
+}
+.copy-btn {
+    width: 10%;
+    height: 100%;
+}
+.copy-btn button{
+
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: var(--bo);
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: aqua;
+}
+.lower {
+    width: 100%;
+    /* position: relative; */
+    height: 400px;
+    border: var(--bo);
+    border-radius: 15px;
+    background-color:rgba(00, 00, 00, 0.5) ;
+    backdrop-filter: blur(10px);
+    border-bottom: 5px solid rgb(180, 32, 218) ;
+    padding: 5%;
+
+
+}
+.pass-length {
+    /* position: relative; */
+    width: 100%;
+    height: 10%;
+    border: var(--bo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-password {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 2%;
+    color: white;
+}
+.pass-no {
+    font-size: 20px;
+    /* position: relative; */
+    font-weight: bold;
+    padding-right: 2%;
+    color: yellow;
+}
+.pass-range {
+    margin-top: 3%;
+    /* position: relative; */
+    width: 100%;
+    height: 11%;
+    border: var(--bo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rangeinput{
+    /* position: absolute; */
+    height: 30%;
+    width: 100%;
+    /* background-color:black; */
+    appearance: none;
+    background-color: rgb(53, 52, 52) ;
+    border-radius: 15px;
+    background-image: linear-gradient(  rgb(180, 32, 218), rgb(180, 32, 218));
+    cursor: pointer;
+    background-size: 50%;
+    /* background-position: 50%; */
+    /* display: inline-block; */
+}
+.rangeinput::-webkit-slider-thumb{
+    position: relative;
+    appearance: none;
+    /* display: inline-block; */
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: yellow;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 0px yellow;
+}
+.rangeinput:focus{
+    outline: 2px solid yellow;
+}
+.rangeinput::-webkit-slider-thumb:hover{
+    background-color: black;
+    outline: 2px solid yellow;
+}
+
+
+.check-btns {
+    width: 100%;
+    height: 48%;
+    padding-top: 0%;
+    display: flex;
+    flex-direction: column;
+    border: var(--bo);
+
+    
+}
+.check-btns label{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.check:checked{
+    background-image: url("check-mark.png");
+    background-position: center;
+    background-color:rgb(180, 32, 218) ;
+    box-shadow: 0px 0px 20px 5px rgb(180, 32, 218);
+}
+
+.check{
+    border: 1px solid rgb(180, 32, 218);
+    size: 100px;
+    
+    appearance: none;
+}
+input.check {
+    width: 15px;
+    height: 15px;
+    margin: 2%;
+    background-color: transparent;
+}
+.pass-strengh {
+    width: 100%;
+    height: 10%;
+    border: var(--bo);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.pass-type {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.pass-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    
+}
+.btn-box {
+    width: 100%;
+    height: 15%;
+    border: var(--bo);
+    margin-top: 2%;
+}
+.btn-box button{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(180, 32, 218);
+
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 5px solid yellow;
+    color: yellow;
+}
+.btn-box button:focus{
+    outline: 2px solid yellow;
+    box-shadow: 0px 0px 20px 0px yellow;
+}
+
+@media (min-width:100px) and (max-width:484px) {
+    .countainer{
+        width: 90%;
+
+        
+    }
+    .main-container{
+        justify-content: center;
+    }
+    .upper{
+        margin-left: 0%;
+    }
+    .lower{
+        margin-left: 0px;
+    }
+}
